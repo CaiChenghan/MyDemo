@@ -1,0 +1,61 @@
+PODS:
+  - Addition (0.2.5):
+    - Addition/NSArray (= 0.2.5)
+    - Addition/NSData (= 0.2.5)
+    - Addition/NSDate (= 0.2.5)
+    - Addition/NSDictionary (= 0.2.5)
+    - Addition/NSDictionary (= 0.2.5)
+    - Addition/NSMutableDictionary (= 0.2.5)
+    - Addition/NSObject (= 0.2.5)
+    - Addition/NSString (= 0.2.5)
+    - Addition/UIColor (= 0.2.5)
+    - Addition/UIImage (= 0.2.5)
+    - Addition/UIView (= 0.2.5)
+  - Addition/NSArray (0.2.5)
+  - Addition/NSData (0.2.5)
+  - Addition/NSDate (0.2.5)
+  - Addition/NSDictionary (0.2.5)
+  - Addition/NSMutableDictionary (0.2.5)
+  - Addition/NSObject (0.2.5):
+    - Addition/NSString
+  - Addition/NSString (0.2.5):
+    - Addition/NSData
+  - Addition/UIColor (0.2.5)
+  - Addition/UIImage (0.2.5)
+  - Addition/UIView (0.2.5)
+  - DTCoreText (1.6.21):
+    - DTCoreText/Core (= 1.6.21)
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTCoreText/Core (1.6.21):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.13)
+  - DTFoundation/DTAnimatedGIF (1.7.13)
+  - DTFoundation/DTHTMLParser (1.7.13):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.13):
+    - DTFoundation/Core
+
+DEPENDENCIES:
+  - Addition (~> 0.2.5)
+  - DTCoreText (~> 1.6.21)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Addition
+    - DTCoreText
+    - DTFoundation
+
+SPEC CHECKSUMS:
+  Addition: f7fb6b3a4e6525cbb646ccb7f2eb9b299dcfeebb
+  DTCoreText: e5d688cffc9f6a61eddd1a4f94e2046851230de3
+  DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
+
+PODFILE CHECKSUM: e76cb59bc7b04dbd8b301239cf8da4cd97e4ac23
+
+COCOAPODS: 1.5.0

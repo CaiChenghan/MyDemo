@@ -12,6 +12,7 @@
 		1BEE09AE20EF636300D84D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE09AD20EF636300D84D7D /* Assets.xcassets */; };
 		1BEE09B120EF636300D84D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE09AF20EF636300D84D7D /* LaunchScreen.storyboard */; };
 		1BEE09B420EF636300D84D7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE09B320EF636300D84D7D /* main.m */; };
+		1BFECCB520EF71FC001D523F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFECCB420EF71FC001D523F /* MainViewController.m */; };
 		DFF7DA1698C5CBEF022C8E25 /* libPods-MyRuntimeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8DED313E86025BD41A10BB /* libPods-MyRuntimeDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 		1BEE09B020EF636300D84D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BEE09B220EF636300D84D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BEE09B320EF636300D84D7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BFECCB320EF71FC001D523F /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1BFECCB420EF71FC001D523F /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		79DBE15792849C75A17FF512 /* Pods-MyRuntimeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRuntimeDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MyRuntimeDemo/Pods-MyRuntimeDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +67,8 @@
 			children = (
 				1BEE09A420EF636200D84D7D /* AppDelegate.h */,
 				1BEE09A520EF636200D84D7D /* AppDelegate.m */,
+				1BFECCB320EF71FC001D523F /* MainViewController.h */,
+				1BFECCB420EF71FC001D523F /* MainViewController.m */,
 				1BEE09AA20EF636200D84D7D /* Main.storyboard */,
 				1BEE09AD20EF636300D84D7D /* Assets.xcassets */,
 				1BEE09AF20EF636300D84D7D /* LaunchScreen.storyboard */,
@@ -183,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BEE09B420EF636300D84D7D /* main.m in Sources */,
+				1BFECCB520EF71FC001D523F /* MainViewController.m in Sources */,
 				1BEE09A620EF636200D84D7D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

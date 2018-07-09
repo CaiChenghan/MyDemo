@@ -11,3 +11,8 @@ target 'MyDTCoreTextDemo' do
 	project 'MyDTCoreTextDemo/MyDTCoreTextDemo.xcodeproj'
 	pod 'DTCoreText', '~> 1.6.21'
 end
+target 'MyWebKitDemo' do
+        platform :ios, '8.0'
+        project 'MyWebkitDemo/MyWebKitDemo.xcodeproj'
+        pod 'SDAutoLayout', '~> 2.2.0'
+end

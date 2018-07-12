@@ -7,6 +7,7 @@
 //
 
 #import "ContentController.h"
+#import <CRToast/CRToast.h>
 
 @interface ContentController ()
 
@@ -32,6 +33,36 @@
     }
     self.imageView.frame = imageRect;
     self.scrollView.contentSize = imageRect.size;
+    
+    if (self.image && self.image.size.height > 7500) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self showToast:@"图片过长，可能无法加载"];
+        });
+    }
+}
+
+- (void)showToast:(NSString *)string {
+    BOOL isShowing = [CRToastManager isShowingNotification];
+    if (!isShowing)
+    {
+        NSDictionary *options = @{
+                                  kCRToastNotificationTypeKey : @(CRToastTypeNavigationBar),
+                                  kCRToastTextKey : string,
+                                  kCRToastFontKey : [UIFont boldSystemFontOfSize:19],
+                                  kCRToastTextColorKey : [UIColor whiteColor],
+                                  kCRToastTextAlignmentKey : @(NSTextAlignmentCenter),
+                                  kCRToastBackgroundColorKey : [UIColor colorWithRed:255.0/255.0 green:116.0/255.0 blue:1.0/255.0 alpha:1],
+                                  kCRToastAnimationInTypeKey : @(CRToastAnimationTypeGravity),
+                                  kCRToastAnimationOutTypeKey : @(CRToastAnimationTypeGravity),
+                                  kCRToastAnimationInDirectionKey : @(CRToastAnimationDirectionTop),
+                                  kCRToastAnimationOutDirectionKey : @(CRToastAnimationDirectionTop),
+                                  kCRToastTimeIntervalKey : @(1)
+                                  };
+        [CRToastManager showNotificationWithOptions:options
+                                    completionBlock:^{
+                                        NSLog(@"Completed");
+                                    }];
+    }
 }
 
 - (void)setImage:(UIImage *)image {

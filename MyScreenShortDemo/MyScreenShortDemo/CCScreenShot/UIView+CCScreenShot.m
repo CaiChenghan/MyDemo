@@ -75,13 +75,17 @@ static char CCScreenShotCCIndicatorViewKey;
 #pragma mark - private fun
 
 - (void)startIndicator:(UIView *)view showIndicator:(BOOL)showIndicator {
-    if (!self.screenShotIndicatorView) {
-        UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-        [view addSubview:indicatorView];
-        self.screenShotIndicatorView = indicatorView;
+    if (showIndicator) {
+        if (!self.screenShotIndicatorView) {
+            UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+            [view addSubview:indicatorView];
+            self.screenShotIndicatorView = indicatorView;
+        }
+        self.screenShotIndicatorView.center = CGPointMake(self.bounds.size.width/2.0, self.bounds.size.height/2.0);
+        [self.screenShotIndicatorView startAnimating];
+    } else {
+        [self stopIndicator];
     }
-    self.screenShotIndicatorView.center = CGPointMake(self.bounds.size.width/2.0, self.bounds.size.height/2.0);
-    [self.screenShotIndicatorView startAnimating];
 }
 
 - (void)stopIndicator {

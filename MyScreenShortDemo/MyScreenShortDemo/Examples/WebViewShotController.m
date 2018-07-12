@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"UIView截图";
+    self.navigationItem.title = @"UIWebView截图";
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.webView];
@@ -33,7 +33,7 @@
 
 - (void)rightBarItemIsTouch {
     __weak typeof(self) weakSelf = self;
-    [self.webView screenShot:^(UIImage *image) {
+    [self.webView screenShotWithIndicator:^(UIImage *image) {
         ContentController *controller = [[ContentController alloc]init];
         controller.image = image;
         [weakSelf.navigationController pushViewController:controller animated:YES];

@@ -35,9 +35,9 @@
 - (void)rightBarItemIsTouch {
     __weak typeof(self) weakSelf = self;
     [self.webView screenShotWithIndicator:^(UIImage *image) {
-//        ContentController *controller = [[ContentController alloc]init];
-//        controller.image = image;
-//        [weakSelf.navigationController pushViewController:controller animated:YES];
+        ContentController *controller = [[ContentController alloc]init];
+        controller.image = image;
+        [weakSelf.navigationController pushViewController:controller animated:YES];
     }];
 }
 

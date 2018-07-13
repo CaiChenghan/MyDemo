@@ -12,7 +12,7 @@ target 'MyDTCoreTextDemo' do
 	pod 'DTCoreText', '~> 1.6.21'
 end
 target 'MyScreenShortDemo' do
-        platform :ios, '8.0'
-        project 'MyScreenShortDemo/MyScreenShortDemo.xcodeproj'
+	platform :ios, '8.0'
+	project 'MyScreenShortDemo/MyScreenShortDemo.xcodeproj'
 	pod 'CRToast', '~> 0.0.9'
 end

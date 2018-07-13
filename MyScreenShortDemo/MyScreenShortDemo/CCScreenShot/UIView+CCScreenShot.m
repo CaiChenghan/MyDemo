@@ -109,6 +109,7 @@ static char CCScreenShotCCIndicatorViewKey;
     [webView.superview addSubview:snapShotView];
     [self startIndicator:snapShotView showIndicator:indicator];
     
+    //重置frame - 若是自动布局，则无效
     webView.frame = CGRectMake(0, 0, contentSize.width, contentSize.height);
     webView.scrollView.contentOffset = CGPointZero;
     
@@ -140,6 +141,7 @@ static char CCScreenShotCCIndicatorViewKey;
     [webView.superview addSubview:snapShotView];
     [self startIndicator:snapShotView showIndicator:indicator];
     
+    //重置frame - 若是自动布局，则无效
     webView.frame = CGRectMake(0, 0, contentSize.width, contentSize.height);
     webView.scrollView.contentOffset = CGPointZero;
     
@@ -172,7 +174,9 @@ static char CCScreenShotCCIndicatorViewKey;
     [self startIndicator:snapShotView showIndicator:indicator];
     
     CGSize contexSize = CGSizeMake(MAX(originRect.size.width, contentSize.width), MAX(originRect.size.height, contentSize.height));
+    //重置frame - 若是自动布局，则无效
     scrollView.frame = CGRectMake(0, 0, contexSize.width, contexSize.height);
+    scrollView.contentOffset = CGPointZero;
     
     UIGraphicsBeginImageContextWithOptions(contexSize, NO, 0);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(expTime* NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

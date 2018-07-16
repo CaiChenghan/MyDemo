@@ -1,7 +1,7 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Addition" "${PODS_ROOT}/Headers/Public/CRToast" "${PODS_ROOT}/Headers/Public/DTCoreText" "${PODS_ROOT}/Headers/Public/DTFoundation" "${PODS_ROOT}/Headers/Public/SDAutoLayout"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Addition" "${PODS_ROOT}/Headers/Public/CRToast" "${PODS_ROOT}/Headers/Public/DTCoreText" "${PODS_ROOT}/Headers/Public/DTFoundation" "${PODS_ROOT}/Headers/Public/MGSwipeTableCell" "${PODS_ROOT}/Headers/Public/Realm" "${PODS_ROOT}/Headers/Public/SDAutoLayout"
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Addition" "${PODS_CONFIGURATION_BUILD_DIR}/SDAutoLayout"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Addition" -isystem "${PODS_ROOT}/Headers/Public/CRToast" -isystem "${PODS_ROOT}/Headers/Public/DTCoreText" -isystem "${PODS_ROOT}/Headers/Public/DTFoundation" -isystem "${PODS_ROOT}/Headers/Public/SDAutoLayout"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Addition" -isystem "${PODS_ROOT}/Headers/Public/CRToast" -isystem "${PODS_ROOT}/Headers/Public/DTCoreText" -isystem "${PODS_ROOT}/Headers/Public/DTFoundation" -isystem "${PODS_ROOT}/Headers/Public/MGSwipeTableCell" -isystem "${PODS_ROOT}/Headers/Public/Realm" -isystem "${PODS_ROOT}/Headers/Public/SDAutoLayout"
 OTHER_LDFLAGS = $(inherited) -ObjC -l"Addition" -l"SDAutoLayout"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

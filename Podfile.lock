@@ -41,12 +41,18 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.13):
     - DTFoundation/Core
+  - MGSwipeTableCell (1.6.7)
+  - Realm (3.7.4):
+    - Realm/Headers (= 3.7.4)
+  - Realm/Headers (3.7.4)
   - SDAutoLayout (2.2.0)
 
 DEPENDENCIES:
   - Addition (~> 0.2.5)
   - CRToast (~> 0.0.9)
   - DTCoreText (~> 1.6.21)
+  - MGSwipeTableCell (~> 1.6.7)
+  - Realm (~> 3.7.4)
   - SDAutoLayout (~> 2.2.0)
 
 SPEC REPOS:
@@ -55,6 +61,8 @@ SPEC REPOS:
     - CRToast
     - DTCoreText
     - DTFoundation
+    - MGSwipeTableCell
+    - Realm
     - SDAutoLayout
 
 SPEC CHECKSUMS:
@@ -62,8 +70,10 @@ SPEC CHECKSUMS:
   CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
   DTCoreText: e5d688cffc9f6a61eddd1a4f94e2046851230de3
   DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
+  MGSwipeTableCell: fb20e983988bde2b8d0df29c2d9e1d8ffd10b74a
+  Realm: a469bb59e33f9926102ccaea4349822c53b9117e
   SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
 
-PODFILE CHECKSUM: 14831b115779eb72e6aab7f7f1b6720d1af9f4b1
+PODFILE CHECKSUM: c090cb99f9a9e98210549cf1b5d85da326e5b1cc
 
 COCOAPODS: 1.5.0

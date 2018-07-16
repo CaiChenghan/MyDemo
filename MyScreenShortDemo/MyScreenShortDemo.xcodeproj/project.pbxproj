@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B3CB3EE20F4817D003F307B /* UIView+CCScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB3ED20F4817D003F307B /* UIView+CCScreenShot.m */; };
 		1B3CB3F020F49548003F307B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3CB3EF20F49548003F307B /* WebKit.framework */; };
 		1B40C6FF20F721540026E479 /* ViewShotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B40C6FE20F721540026E479 /* ViewShotController.m */; };
 		1B40C70220F7217A0026E479 /* ScrollViewShotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B40C70120F7217A0026E479 /* ScrollViewShotController.m */; };
@@ -15,6 +14,7 @@
 		1B40C70820F721A40026E479 /* WKWebViewShotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B40C70720F721A40026E479 /* WKWebViewShotController.m */; };
 		1B40C70B20F721B70026E479 /* TableViewShotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B40C70A20F721B70026E479 /* TableViewShotController.m */; };
 		1B40C70E20F721CC0026E479 /* ContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B40C70D20F721CC0026E479 /* ContentController.m */; };
+		1B40C7AB20FC3E4A0026E479 /* UIView+CCScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB3ED20F4817D003F307B /* UIView+CCScreenShot.m */; };
 		1B4AA6D220F352C2002327B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4AA6D120F352C2002327B1 /* AppDelegate.m */; };
 		1B4AA6D820F352C2002327B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4AA6D620F352C2002327B1 /* Main.storyboard */; };
 		1B4AA6DA20F352C3002327B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4AA6D920F352C3002327B1 /* Assets.xcassets */; };
@@ -252,9 +252,9 @@
 				1BF4233520F3557E00011EB2 /* MainViewController.m in Sources */,
 				1B40C70B20F721B70026E479 /* TableViewShotController.m in Sources */,
 				1B4AA6D220F352C2002327B1 /* AppDelegate.m in Sources */,
-				1B3CB3EE20F4817D003F307B /* UIView+CCScreenShot.m in Sources */,
 				1B40C70E20F721CC0026E479 /* ContentController.m in Sources */,
 				1B40C6FF20F721540026E479 /* ViewShotController.m in Sources */,
+				1B40C7AB20FC3E4A0026E479 /* UIView+CCScreenShot.m in Sources */,
 				1B40C70220F7217A0026E479 /* ScrollViewShotController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

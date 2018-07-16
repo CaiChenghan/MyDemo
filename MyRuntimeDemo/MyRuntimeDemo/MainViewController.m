@@ -23,7 +23,7 @@
     self.navigationItem.title = @"MyRuntimeDemo";
     [self.view addSubview:self.tableView];
     self.tableView.sd_layout
-    .topEqualToView(self.view)
+    .topEqualToView(self.view).offset(10)
     .leftEqualToView(self.view)
     .rightEqualToView(self.view)
     .bottomEqualToView(self.view);

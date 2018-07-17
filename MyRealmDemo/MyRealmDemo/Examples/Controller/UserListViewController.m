@@ -35,7 +35,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.tableView];
-    [self.tableView registerClass:[UserInfoCell class] forCellReuseIdentifier:@"UserInfoCell"];
     
     UIBarButtonItem *addDataItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addData)];
     UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshData)];
@@ -258,6 +257,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UserInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UserInfoCell"];
+    if (cell == nil) {
+        cell = [[UserInfoCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"UserInfoCell"];
+    }
     User *user = _dataArray[indexPath.row];
     cell.textLabel.text = user.name;
     NSString *line = [self getUserLineDes:user.line];
